@@ -1,0 +1,5 @@
+{
+  "name": "LimeFlow Presentation Builder",
+  "description": "A React-based presentation builder focusing on bright green aesthetics, gradients, and blur effects, integrated with Gemini for content generation.",
+  "requestFramePermissions": []
+}
