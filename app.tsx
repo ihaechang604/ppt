@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { INITIAL_SLIDES, SlideData, SlideType } from './types';
-import Background from './components/Background';
-import SlideRenderer from './components/SlideRenderer';
-import EditorPanel from './components/EditorPanel';
+import { INITIAL_SLIDES, SlideData, SlideType } from './types.ts';
+import Background from './components/Background.tsx';
+import SlideRenderer from './components/SlideRenderer.tsx';
+import EditorPanel from './components/EditorPanel.tsx';
 import { 
   Presentation, Edit3, MonitorPlay, CheckCircle, X, Plus, Sparkles, Loader2,
   Undo2, Redo2, Trash2, ArrowUp, ArrowDown, AlertCircle,
   Settings, Copy, Check, LogIn, Laptop, ChevronLeft, ChevronRight, Share2, Link, RefreshCw, HelpCircle, BookOpen
 } from 'lucide-react';
-import { saveToSheet, loadFromSheet } from './services/sheetService';
+import { saveToSheet, loadFromSheet } from './services/sheetService.ts';
 
 const STORAGE_KEY = 'limeflow_presentation_data_v9_sky_gradient';
 const SHEET_URL_KEY = 'limeflow_sheet_url';
