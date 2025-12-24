@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { SlideData, SlideType } from '../types.ts';
+import { SlideData, SlideType } from '../types';
 import { Wand2, Loader2, Layout, Plus, Minus, Type, Sparkles, Send } from 'lucide-react';
-import { generateSlideContent, generateNewSlideFromTopic } from '../services/geminiService.ts';
+import { generateSlideContent, generateNewSlideFromTopic } from '../services/geminiService';
 
 interface EditorPanelProps {
   slide: SlideData;
